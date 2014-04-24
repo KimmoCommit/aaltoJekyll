@@ -24,7 +24,7 @@
 								//var Href="#cat-sub-num-"+subId;
 								var Class="list-group-item";
 								$(this).attr("id",thisTrimmerText);
-								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><div class="cat-title-mark"></div><a href="#' + thisTrimmerText + '" class="' + Class + '">' + thisText + '</a>{{ category | last | size }}</li>'); 
+								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><div class="cat-title-mark"></div><a href="#' + thisTrimmerText + '" class="' + Class + '">' + thisText + '</a></li>'); 
 								//alert(thisTrimmerText);
 								
 
