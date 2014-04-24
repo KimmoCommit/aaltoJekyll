@@ -1,4 +1,4 @@
-<script>
+
 		$(function(){
 			//var mainId = 0;
 			//var subId = 0;
@@ -35,10 +35,10 @@
 						});
 			});
 });
-</script>
 
 
-<script>
+
+
 $(function(){
 	$('#toc').affix({
 		offset: {
@@ -49,52 +49,17 @@ $(function(){
 				}
 			});
 });					
-</script>
 
 
-<script>
+
 $(function(){
 	$('body').scrollspy({ target: '#toc', offset:100 });
 });
-</script> 
 
 
 
 
-<!--
-<script>
-$(function(){
-	$(".toc-ul a").click(function(){
-		$('html, body').animate({
-			scrollTop: $( $(this).attr('href') ).offset().top
-		}, "slow");
-		return false;
-	});
-});
-
-</script>
--->
 
 
 
-<!--
-<script>
-$(function() {
-	$(".sub-title").click(function() {
-		if($(this).next("div").is(":visible")){
-			$(this).next("div").slideUp("");
-			$(this).children(".sub-title-mark").html('+');
-			
-			//$(this).next("div");
-		} else {
-			$(".sub-content").slideUp("");
-			$(this).next("div").slideToggle("");
-			//$(this).children(".sub-title-mark").replaceWith('<div class="sub-title-mark"> - </div>');
-			$(this).children(".sub-title-mark").html('-');
-			//alert($(this).children(".sub-title-mark").text());
-			
-		}
-	});
-});
-</script>
--->
+
