@@ -90,13 +90,14 @@ header {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto -100px;
 }
 
 /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
 /* line 109, ../compass/sass/aaltosulku.scss */
 .push {
   clear: both;
+  height: 100px;
 }
 
 /* line 12, ../compass/sass/ohjeet.scss */
