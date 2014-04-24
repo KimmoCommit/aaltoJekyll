@@ -1,50 +1,12 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>asas</title>
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-<![endif]-->
-<link rel="stylesheet" href="assets/css/normalize.css">
-<link rel="stylesheet" href="assets/css/ruutu.css">
-<link rel="stylesheet" href="assets/css/Lindeman.css">
-<link rel="stylesheet" href="assets/css/aaltosulku.css">
-<link rel="stylesheet" href="assets/css/ohjeet.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+---
+layout: default
+---
 
-</head>
+
 <body data-spy="scroll" data-target="#toc" data-offset="100">
 
 <div id="header-line2"></div>
-	<header>
 
-
-		<div class="rivi">
-			<div class="ruutu-2-tablet" >
-				<!-- Sijoitetaan logo sitten tähän jos siltä tuntuu <h4>LOGO</h4> -->
-				<h4> { aaltosulku }</h4>
-			</div>
-			<div class="ruutu-10-tablet">
-				<nav class="ruutu-12-tablet">
-					<ul>
-						<li><a href="index.html">Etusivu</a></li>
-						<li><a href="ohjeet.html">Ohjeet</a></li>
-						<li><a href="yhteiso.html">Yhteisö</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="rivi">
-		<div class="ruutu-12-tablet">
-		</div>
-	</div>
-	</header>
-	
-	
-	
 
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
@@ -289,12 +251,12 @@ $(function(){
 });					
 </script>
 
-<!--
+
 <script>
 $(function(){
-	$('body').scrollspy({ target: '.content-container', offset:75 });
+	$('body').scrollspy({ target: '#toc', offset:100 });
 });
-</script> -->
+</script> 
 
 
 
@@ -336,6 +298,3 @@ $(function() {
 });
 </script>
 -->
-
-</body>
-</html>
