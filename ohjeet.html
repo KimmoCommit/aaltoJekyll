@@ -38,14 +38,14 @@ layout: default
 		<div class="ruutu-12-tablet">
 			<div class="cat-main">
 				<div class="cat-sub">
-					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ category | first }}</h6></div>
+					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ category | first | camelcase }}</h6></div>
 					<div class="cat-sub-content">
 						{% for posts in category %}
 						{% for post in posts %}
 						{% if post.title != null %}
 						<div class="sub-title">
 							<div class="sub-title-mark"></div>
-							<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+							<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | camelcase }}</a></div>
 						</div>
 						{% endif %}
 						{% endfor %}
