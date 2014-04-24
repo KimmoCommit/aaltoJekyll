@@ -82,8 +82,8 @@ a {
 
 footer {
 	background-color:$footer;
-	clear: both;
-
+	margin-top:-100px;
+	height:100px;
 }
 
 header {
@@ -94,23 +94,16 @@ header {
 }
 
 .content-container {
-min-height: 100%;
-height: auto !important;
-height: 100%;
-margin: 0 auto -100px;
+
 }
 
 /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
 .content {
 	//padding:10px;
 	//padding-bottom:80px
-	min-height: 100%;
-height: auto !important;
+	min-height: 300px;
+
 height: 100%;
 
 }
 
-.push {
-	clear:both;
-	height:100px;
-}
