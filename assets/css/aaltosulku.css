@@ -77,8 +77,8 @@ a {
 /* line 83, ../compass/sass/aaltosulku.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.05);
-  margin-top: -100px;
-  height: 100px;
+  margin-top: -250px;
+  height: 250px;
 }
 
 /* line 89, ../compass/sass/aaltosulku.scss */
@@ -89,6 +89,6 @@ header {
 /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
 /* line 101, ../compass/sass/aaltosulku.scss */
 .content {
-  min-height: 300px;
+  min-height: 500px;
   height: 100%;
 }
