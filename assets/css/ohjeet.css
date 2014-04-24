@@ -80,6 +80,11 @@ header {
   height: 100px;
 }
 
+/* line 90, ../compass/sass/aaltosulku.scss */
+.content-container {
+  min-height: 100%;
+}
+
 /* line 12, ../compass/sass/ohjeet.scss */
 #toc .toc-title {
   font-size: 90%;

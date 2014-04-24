@@ -80,6 +80,11 @@ header {
   height: 100px;
 }
 
+/* line 90, ../compass/sass/aaltosulku.scss */
+.content-container {
+  min-height: 100%;
+}
+
 /* line 7, ../compass/sass/index.scss */
 .intro {
   background-color: white;
