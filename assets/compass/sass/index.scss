@@ -1,0 +1,43 @@
+@import 'compass/css3';
+@import 'aaltosulku.scss';
+
+
+
+
+.intro {
+background-color:white;
+color:$lindeman-text-color;
+font-size:125%;
+
+	/*
+
+	rgba(255, 99, 71, 1.0)
+background-color: white;
+color:$lindeman-text-color;
+/*
+	background: linear-gradient(45deg, $bg + 180 25%,
+    $bg + 150 25%, $bg  + 150 50%, 
+    $bg + 180 50%, $bg + 180 75%, 
+    $bg + 150 75%);
+background-size:10px 10px;
+color:$lindeman-text-color;
+border-bottom:5px solid $bg + 150;
+*/
+
+}
+/*
+#header-line{
+	width: 100%;
+	margin: 0 auto;
+	border-top:15px solid $decoration-line;
+//border-bottom:1px dashed $decoration-line;
+} */
+
+
+
+.ruutu-4-tablet:hover{
+border-right: $decoration-line - 250;
+background-color:$bg + 10;
+color:white;
+
+}

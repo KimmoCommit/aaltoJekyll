@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/*
+$lindeman-text-color: #444;
+$main: rgba(28,20,13,1);
+$bg: rgba(183,212,87,1);
+$text: grey;
+$link: rgba(183,212,87,1);
+$right: 5px solid rgba(28,20,13,1);
+*/
+/* line 20, ../compass/sass/aaltosulku.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  border-top: 15px solid tomato;
+}
+
+/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
+/* line 29, ../compass/sass/aaltosulku.scss */
+::selection {
+  background: tomato;
+  /* Safari */
+  color: white;
+}
+
+/* line 34, ../compass/sass/aaltosulku.scss */
+::-moz-selection {
+  background: tomato;
+  /* Firefox */
+  color: white;
+}
+
+/* line 40, ../compass/sass/aaltosulku.scss */
+nav {
+  text-align: center;
+}
+
+/* line 45, ../compass/sass/aaltosulku.scss */
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  float: left;
+  padding: 2px 5px;
+  margin: auto;
+}
+
+/* line 53, ../compass/sass/aaltosulku.scss */
+nav ul {
+  margin: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  *display: inline;
+  float: right;
+}
+
+/* line 63, ../compass/sass/aaltosulku.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 69, ../compass/sass/aaltosulku.scss */
+.p-footer {
+  text-align: left;
+  font-size: 70%;
+}
+
+/* line 74, ../compass/sass/aaltosulku.scss */
+a {
+  color: tomato;
+}
+
+/* line 79, ../compass/sass/aaltosulku.scss */
+footer {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 83, ../compass/sass/aaltosulku.scss */
+header {
+  height: 100px;
+}
+
+/* line 12, ../compass/sass/ohjeet.scss */
+#toc .toc-title {
+  font-size: 90%;
+}
+
+/* line 19, ../compass/sass/ohjeet.scss */
+section {
+  border: none;
+  margin-bottom: 5%;
+}
+
+/* line 24, ../compass/sass/ohjeet.scss */
+.ruutu-12-tablet {
+  padding-bottom: 0;
+}
+
+/*
+#header-line2{
+	width: 100%;
+	margin: 0 auto;
+	border-bottom:15px solid $bg;
+}
+*/
+/* line 36, ../compass/sass/ohjeet.scss */
+.footer-top {
+  margin-top: 60%;
+  width: 100%;
+}
+
+/* line 42, ../compass/sass/ohjeet.scss */
+.affix {
+  position: fixed;
+  top: 5%;
+}
+
+/** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
+liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
+/* line 51, ../compass/sass/ohjeet.scss */
+.active {
+  padding-left: 5%;
+  background-color: tomato;
+  border-radius: 2px 2px 2px 2px;
+}
+/* line 76, ../compass/sass/ohjeet.scss */
+.active a {
+  color: white;
+  text-shadow: 0 1px #cd3115;
+  padding-right: 3px;
+}
+
+/* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
+Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
+/* line 90, ../compass/sass/ohjeet.scss */
+.active:after {
+  content: "";
+  color: white;
+  float: right;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 11px solid white;
+}
+
+/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
+/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
+/* line 110, ../compass/sass/ohjeet.scss */
+.cat-sub {
+  margin-left: 1.5%;
+  margin-bottom: 7%;
+  width: 85%;
+}
+
+/* line 116, ../compass/sass/ohjeet.scss */
+.cat-main-title {
+  margin-bottom: 8%;
+  font-size: 155%;
+}
+
+/* line 121, ../compass/sass/ohjeet.scss */
+.sub-title {
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+
+/* line 127, ../compass/sass/ohjeet.scss */
+.sub-title-mark {
+  margin-right: 1px;
+  color: tomato;
+  float: left;
+}
+
+/* line 135, ../compass/sass/ohjeet.scss */
+.cat-title-mark:before {
+  content: "";
+  float: left;
+}
+
+/* line 139, ../compass/sass/ohjeet.scss */
+.cat-title-mark:after {
+  content: "";
+  float: right;
+}
+
+/* line 146, ../compass/sass/ohjeet.scss */
+.toc-ul li {
+  list-style: none;
+  transition: padding-left 0.5s;
+  font-size: 90%;
+}
+
+/* line 154, ../compass/sass/ohjeet.scss */
+.list-group-item {
+  color: tomato;
+}
+
+/* line 158, ../compass/sass/ohjeet.scss */
+.list-group-item-heading {
+  color: tomato;
+}
+/* line 160, ../compass/sass/ohjeet.scss */
+.list-group-item-heading a {
+  font-weight: bold;
+  font-size: 115%;
+}
+
+/* line 169, ../compass/sass/ohjeet.scss */
+.content-container div:target {
+  animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-name: in-out;
+  -moz-animation-name: in-out;
+  -webkit-animation-name: in-out;
+}
+
+@-moz-keyframes in-out {
+  /* line 180, ../compass/sass/ohjeet.scss */
+  from {
+    color: tomato;
+  }
+}
+
+@-webkit-keyframes in-out {
+  /* line 189, ../compass/sass/ohjeet.scss */
+  from {
+    color: tomato;
+  }
+}
+
+@keyframes in-out {
+  /* line 198, ../compass/sass/ohjeet.scss */
+  from {
+    color: tomato;
+  }
+}
+
+/* line 207, ../compass/sass/ohjeet.scss */
+.sub-title-mark:before {
+  content: "{}";
+  font-weight: bold;
+}

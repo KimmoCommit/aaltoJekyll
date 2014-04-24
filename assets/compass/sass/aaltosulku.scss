@@ -1,0 +1,88 @@
+@import 'compass/css3';
+/*
+$lindeman-text-color: #444;
+$main: rgba(28,20,13,1);
+$bg: rgba(183,212,87,1);
+$text: grey;
+$link: rgba(183,212,87,1);
+$right: 5px solid rgba(28,20,13,1);
+*/
+
+$lindeman-text-color: #444;
+$decoration-line: tomato;
+$bg: tomato;
+//$text: rgba(153,23,60,1);
+$link:  tomato;
+$right: 5px solid rgba(105,165,164,0.7);
+$body: rgba(229,234,164,0.2);
+$footer: rgba(0,0,0,0.05);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	//background-color:rgba(240,240,216,1);
+	background-color: white;
+	border-top:15px solid $decoration-line;
+}
+
+
+/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
+::selection {
+	background: $bg; /* Safari */
+	color:white;
+
+}
+::-moz-selection {
+	background: $bg; /* Firefox */
+	color:white;
+}
+
+
+nav {
+	text-align: center;
+
+}
+
+nav ul li {
+	display:inline-block;
+	text-align: center;
+	float:left;
+	padding:2px 5px;
+	margin: auto;
+}
+
+nav ul{
+	margin:auto;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	zoom:1;
+	*display:inline;
+	float:right;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.p-footer {
+	text-align:left;
+	font-size:70%;
+}
+
+a {
+	color:$bg;
+	
+}
+
+footer {
+	background-color:$footer;
+}
+
+header {
+	height:100px;
+	//background-color:rgba(52, 48, 45,0.1);
+	//color:white;
+
+}

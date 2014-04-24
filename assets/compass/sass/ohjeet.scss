@@ -1,0 +1,211 @@
+@import 'compass/css3';
+@import 'aaltosulku.scss';
+
+
+#toc {
+
+
+	li a{
+		
+	}
+
+	.toc-title {
+
+		font-size: 90%;
+	}
+}
+
+
+section {
+	border:none;
+	margin-bottom:5%;
+}
+
+.ruutu-12-tablet {
+	padding-bottom:0;
+}
+/*
+#header-line2{
+	width: 100%;
+	margin: 0 auto;
+	border-bottom:15px solid $bg;
+}
+*/
+
+//Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
+.footer-top {
+	margin-top:60%;
+	width:100%;
+}
+
+
+.affix {
+	position:fixed;
+	top:5%;
+	
+
+}
+
+/** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
+liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
+.active {
+	padding-left:5%;
+	//font-size:125%;
+
+	//background-color: $bg;
+	
+	// box-shadow: 2px 2px 2px $decoration-line ;
+	
+	//border-left:3px solid tomato;
+	//border-right:3px solid tomato;
+	
+	//border-right:5px solid rgba(255,99,71,0.9);
+	
+	//border-right:2px solid $link;
+	//border-bottom:2px solid $link;
+	
+	 background-color: $bg;
+	
+	//background-color: rgba(150,150,150,0.1);
+	//border-left:5px solid rgba(200,200,200,0.5);
+	border-radius:2px 2px 2px 2px;
+
+
+
+
+a {
+
+	color:rgba(255,255,255,1);
+	text-shadow: 0 1px $bg - 50;
+	padding-right:3px;
+}
+
+
+
+}
+
+
+/* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
+Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
+.active:after{
+	content: ""; 
+	color:white;
+	float:right;
+
+	border-top: 11px solid transparent;
+	border-bottom: 11px solid transparent; 
+
+
+	border-right:11px solid rgba(255,255,255,1); 
+}
+
+
+
+
+/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
+/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
+.cat-sub-toc {
+	//margin-left:5.5%;
+}
+.cat-sub {
+	margin-left:1.5%;
+	margin-bottom:7%;
+	width:85%;
+}
+
+.cat-main-title {
+	margin-bottom:8%;
+	font-size:155%;
+}
+
+.sub-title {
+	margin-bottom:1%;
+	cursor:pointer;
+
+}
+
+.sub-title-mark{
+
+	margin-right:1px;
+	color:$link;
+	float:left;
+
+}
+
+.cat-title-mark:before {
+	content:"";
+	float:left;
+}
+.cat-title-mark:after {
+	content:"";
+	float:right;
+}
+
+
+
+.toc-ul li {
+	list-style: none;
+	transition: padding-left 0.5s;
+	font-size:90%;
+}
+
+
+
+.list-group-item {
+		color:$bg;
+}
+
+.list-group-item-heading {
+	
+	a {
+		font-weight:bold;
+		font-size:115%;
+
+	}
+
+color:$bg;
+}
+
+.content-container div:target{
+	animation-duration:1.2s;
+	-moz-animation-duration:1.2s;
+	-webkit-animation-duration:1.2s;
+	animation-name:in-out;
+	-moz-animation-name:in-out;
+	-webkit-animation-name:in-out;
+}
+
+
+@-moz-keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+@-webkit-keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+@keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+
+.sub-title-mark:before {
+	content:"{}";
+	font-weight:bold;
+}
+
