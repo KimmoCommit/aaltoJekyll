@@ -42,10 +42,12 @@ layout: default
 					<div class="cat-sub-content">
 						{% for posts in category %}
 						{% for post in posts %}
+						{% if post.title != null %}
 						<div class="sub-title">
 							<div class="sub-title-mark"></div>
 							<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
 						</div>
+						{% endif %}
 						{% endfor %}
 						{% endfor %}
 					</div>
