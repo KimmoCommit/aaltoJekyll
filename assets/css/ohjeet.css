@@ -80,6 +80,7 @@ footer {
   /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
   width: 100%;
   height: 80px;
+  position: absolute;
   bottom: 0;
   left: 0;
 }
@@ -91,9 +92,16 @@ header {
 
 /* line 101, ../compass/sass/aaltosulku.scss */
 .content-container {
-  min-height: 100%;
   /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
   position: relative;
+  min-height: 100%;
+}
+
+/**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
+/* line 109, ../compass/sass/aaltosulku.scss */
+.content {
+  padding: 10px;
+  padding-bottom: 80px;
 }
 
 /* line 12, ../compass/sass/ohjeet.scss */
