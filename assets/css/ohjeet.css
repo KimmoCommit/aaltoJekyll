@@ -92,18 +92,13 @@ header {
 
 /* line 101, ../compass/sass/aaltosulku.scss */
 .content-container {
-  /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
-  position: relative;
   min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
 }
 
 /**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
-/* line 109, ../compass/sass/aaltosulku.scss */
-.content {
-  padding: 10px;
-  padding-bottom: 80px;
-}
-
 /* line 12, ../compass/sass/ohjeet.scss */
 #toc .toc-title {
   font-size: 90%;
