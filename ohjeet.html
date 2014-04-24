@@ -32,13 +32,13 @@ layout: default
 
 
 
-{% for category in site.categories %}
+{% for category in site.categories%}
 <section>
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
 			<div class="cat-main">
 				<div class="cat-sub">
-					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ category | first | capitalize }}</h6></div>
+					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ category | first | capitalize  }}</h6></div>
 					<div class="cat-sub-content">
 						{% for posts in category %}
 						{% for post in posts %}
