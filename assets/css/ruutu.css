@@ -1,0 +1,117 @@
+
+*,
+*:after,
+*:before {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rivi {
+width: 100%;     /* JOS MUUTAT TÄMÄN ELEMENTIN LEVEYTTÄ, NIIN TARKISTA ETTÄ section -ELEMENTIN LEVEYS ON SAMA */
+max-width:75em; /* JOS MUUTAT TÄMÄN ELEMENTIN LEVEYTTÄ, NIIN TARKISTA ETTÄ section -ELEMENTIN LEVEYS ON SAMA */
+margin:0 auto;
+}
+
+.rivi .rivi {
+margin-left: -0.65em;
+margin-right: -0.65em;
+width: auto;
+}
+
+[class*='ruutu-'] {
+float: left;
+position: relative;
+padding: 1em;
+width:100%;
+}
+
+
+[class*='ruutu-']:last-of-type {
+float: right;
+}
+
+/* Clearfix */
+.rivi:after {
+content: "";
+display: table;
+clear: both;
+}
+.container:before,
+.container:after {
+display: table;
+content: " ";
+}
+
+.container:after {
+clear: both;
+}
+
+
+@media only screen {
+.ruutu-1-phone { width: 8.3333333333333%; }
+.ruutu-2-phone { width: 16.666666666667%; }
+.ruutu-3-phone { width: 25%; }
+.ruutu-4-phone { width: 33.333333333333%; }
+.ruutu-5-phone { width: 41.666666666667%; }
+.ruutu-6-phone { width: 50%; }
+.ruutu-7-phone { width: 58.333333333333%; }
+.ruutu-8-phone { width: 66.666666666667%; }
+.ruutu-9-phone { width: 75%; }
+.ruutu-10-phone { width: 83.333333333333%; }
+.ruutu-11-phone { width: 91.666666666667%; }
+.ruutu-12-phone { width: 100%; }
+}
+
+@media only screen and (min-width: 48em) {
+.ruutu-1-tablet { width: 8.3333333333333%; }
+.ruutu-2-tablet { width: 16.666666666667%; }
+.ruutu-3-tablet { width: 25%; }
+.ruutu-4-tablet { width: 33.333333333333%; }
+.ruutu-5-tablet { width: 41.666666666667%; }
+.ruutu-6-tablet { width: 50%; }
+.ruutu-7-tablet { width: 58.333333333333%; }
+.ruutu-8-tablet { width: 66.666666666667%; }
+.ruutu-9-tablet { width: 75%; }
+.ruutu-10-tablet { width: 83.333333333333%; }
+.ruutu-11-tablet { width: 91.666666666667%; }
+.ruutu-12-tablet { width: 100%; }
+}
+
+@media only screen and (min-width: 62em) {
+.ruutu-1-laptop { width: 8.3333333333333%; }
+.ruutu-2-laptop { width: 16.666666666667%; }
+.ruutu-3-laptop { width: 25%; }
+.ruutu-4-laptop { width: 33.333333333333%; }
+.ruutu-5-laptop { width: 41.666666666667%; }
+.ruutu-6-laptop { width: 50%; }
+.ruutu-7-laptop { width: 58.333333333333%; }
+.ruutu-8-laptop { width: 66.666666666667%; }
+.ruutu-9-laptop { width: 75%; }
+.ruutu-10-laptop { width: 83.333333333333%; }
+.ruutu-11-laptop { width: 91.666666666667%; }
+.ruutu-12-laptop { width: 100%; }
+}
+
+@media only screen and (min-width: 75em) {
+.ruutu-1-desktop { width: 8.3333333333333%; }
+.ruutu-2-desktop { width: 16.666666666667%; }
+.ruutu-3-desktop { width: 25%; }
+.ruutu-4-desktop { width: 33.333333333333%; }
+.ruutu-5-desktop { width: 41.666666666667%; }
+.ruutu-6-desktop { width: 50%; }
+.ruutu-7-desktop { width: 58.333333333333%; }
+.ruutu-8-desktop { width: 66.666666666667%; }
+.ruutu-9-desktop { width: 75%; }
+.ruutu-10-desktop { width: 83.333333333333%; }
+.ruutu-11-desktop { width: 91.666666666667%; }
+.ruutu-12-desktop { width: 100%; }
+}
+
+@media only screen and (max-width: 30em){
+.ruutu-100 { width:100%;}
+}
+
+

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*
+$lindeman-text-color: #444;
+$main: rgba(28,20,13,1);
+$bg: rgba(183,212,87,1);
+$text: grey;
+$link: rgba(183,212,87,1);
+$right: 5px solid rgba(28,20,13,1);
+*/
+/* line 20, ../compass/sass/aaltosulku.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  border-top: 15px solid tomato;
+}
+
+/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
+/* line 29, ../compass/sass/aaltosulku.scss */
+::selection {
+  background: tomato;
+  /* Safari */
+  color: white;
+}
+
+/* line 34, ../compass/sass/aaltosulku.scss */
+::-moz-selection {
+  background: tomato;
+  /* Firefox */
+  color: white;
+}
+
+/* line 40, ../compass/sass/aaltosulku.scss */
+nav {
+  text-align: center;
+}
+
+/* line 45, ../compass/sass/aaltosulku.scss */
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  float: left;
+  padding: 2px 5px;
+  margin: auto;
+}
+
+/* line 53, ../compass/sass/aaltosulku.scss */
+nav ul {
+  margin: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  *display: inline;
+  float: right;
+}
+
+/* line 63, ../compass/sass/aaltosulku.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 69, ../compass/sass/aaltosulku.scss */
+.p-footer {
+  text-align: left;
+  font-size: 70%;
+}
+
+/* line 74, ../compass/sass/aaltosulku.scss */
+a {
+  color: tomato;
+}
+
+/* line 79, ../compass/sass/aaltosulku.scss */
+footer {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 83, ../compass/sass/aaltosulku.scss */
+header {
+  height: 100px;
+}
+
+/* line 7, ../compass/sass/index.scss */
+.intro {
+  background-color: white;
+  color: #444444;
+  font-size: 125%;
+  /*
+  
+  	rgba(255, 99, 71, 1.0)
+  background-color: white;
+  color:$lindeman-text-color;
+  /*
+  	background: linear-gradient(45deg, $bg + 180 25%,
+      $bg + 150 25%, $bg  + 150 50%, 
+      $bg + 180 50%, $bg + 180 75%, 
+      $bg + 150 75%);
+  background-size:10px 10px;
+  color:$lindeman-text-color;
+  border-bottom:5px solid $bg + 150;
+  */
+}
+
+/* line 38, ../compass/sass/index.scss */
+.ruutu-4-tablet:hover {
+  border-right: #050000;
+  background-color: #ff6d51;
+  color: white;
+}
